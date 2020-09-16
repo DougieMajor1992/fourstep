@@ -1,32 +1,81 @@
 !!!
 %html
   %head
-    %meta{:charset => "utf-8"}
-      %title Sample Deployment
-      :css
-        body {
-          color: #ffffff;
-          background-color: #007f3f;
-          font-family: Arial, sans-serif;
-          font-size: 14px;
-        }
-
-        h1 {
-          font-size: 500%;
-          font-weight: normal;
-          margin-bottom: 0;
-        }
-
-        h2 {
-          font-size: 200%;
-          font-weight: normal;
-          margin-bottom: 0;
-        }
-    %body
-    %div{:align => "center"}
-      %h1 Congratulations Finally Douglas!
-      %h2 You have successfully completed the second tutorial for AWS CodePipeline.
-      %p
-        For next steps, read the
-        = succeed "." do
-          %a{:href => "http://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html"} AWS CodePipeline Documentation
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Dougie Major - Curriculum Vitae
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    %meta{:content => "The Curriculum Vitae of Dougie Major.", :name => "description"}/
+    %meta{:charset => "UTF-8"}/
+    %link{:href => "style.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300", :rel => "stylesheet", :type => "text/css"}/
+    /[if lt IE 9]
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  %body#top
+    #cv.instaFade
+      .mainDetails
+        #headshot.quickFade
+          %img{:alt => "Alan Smith", :src => "headshot.jpg"}/
+        #name
+          %h1.quickFade.delayTwo Dougie Major
+          %h2.quickFade.delayThree Job Title
+        #contactDetails.quickFade.delayFour
+          %ul
+            %li
+              e:
+              %a{:href => "mailto:joe@bloggs.com", :target => "_blank"} dougiemajor@gmail.com
+            %li
+              w:
+              %a{:href => "http://www.bloggs.com"} www.dougie-devops-pipeline.com
+        .clear
+      #mainArea.quickFade.delayFive
+        %section
+          %article
+            .sectionTitle
+              %h1 Personal Profile
+            .sectionContent
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor metus, interdum at scelerisque in, porta at lacus. Maecenas dapibus luctus cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.
+          .clear
+        %section
+          .sectionTitle
+            %h1 Work Experience
+          .sectionContent
+            %article
+              %h2 Job Title at Company
+              %p.subDetails April 2011 - Present
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.
+            %article
+              %h2 Job Title at Company
+              %p.subDetails Janruary 2007 - March 2011
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.
+            %article
+              %h2 Job Title at Company
+              %p.subDetails October 2004 - December 2006
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.
+          .clear
+        %section
+          .sectionTitle
+            %h1 Key Skills
+          .sectionContent
+            %ul.keySkills
+              %li A Key Skill
+              %li A Key Skill
+              %li A Key Skill
+              %li A Key Skill
+              %li A Key Skill
+              %li A Key Skill
+              %li A Key Skill
+              %li A Key Skill
+          .clear
+        %section
+          .sectionTitle
+            %h1 Education
+          .sectionContent
+            %article
+              %h2 College/University
+              %p.subDetails Qualification
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim.
+            %article
+              %h2 College/University
+              %p.subDetails Qualification
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim.
+          .clear
